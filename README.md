@@ -5,7 +5,7 @@ To perform the color conversion between RGB, BGR, HSV, and YCbCr color models.
 ## Software Required:
 Anaconda - Python 3.7
 ## Algorithm:
-Step1:
+Step1:./
 Import cv2 and save and image as filename.jpg
 
 Step2:
