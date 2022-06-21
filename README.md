@@ -25,7 +25,6 @@ import cv2
 img=cv2.imread("rr.jpg")
 cv2.imshow("trade",img)
 cv2.waitKey(0)
-
 # i) Convert BGR and RGB to HSV and GRAY
 # bgr to hsv and gray
 bgr_hsv = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
@@ -38,21 +37,18 @@ cv2.imshow('RGB2HSV',rgb_hsv)
 rgb_gray = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
 cv2.imshow('RGB2GRAY',rgb_gray)
 cv2.waitKey(0)
-
 # ii)Convert HSV to RGB and BGR
 hsv_rgb = cv2.cvtColor(img,cv2.COLOR_HSV2RGB)
 cv2.imshow('HSV2RGB',hsv_rgb)
 hsv_bgr = cv2.cvtColor(img,cv2.COLOR_HSV2BGR)
 cv2.imshow('HSV2BGR',hsv_bgr)
 cv2.waitKey(0)
-
 # iii)Convert RGB and BGR to YCrCb
 rgb_ycrcb = cv2.cvtColor(img,cv2.COLOR_RGB2YCrCb)
 cv2.imshow('RGB2YCrCb',rgb_ycrcb)
 bgr_ycrcb = cv2.cvtColor(img,cv2.COLOR_BGR2YCrCb)
 cv2.imshow('BGR2YCrCb',bgr_ycrcb)
 cv2.waitKey(0)
-
 # iv)Split and Merge RGB Image
 #split rgb
 blue=img[:,:,0]
@@ -65,7 +61,6 @@ cv2.imshow("R",red)
 Merge_rgb=cv2.merge((blue,green,red))
 cv2.imshow("Merge_RGB",Merge_rgb)
 cv2.waitKey(0)
-
 # v) Split and merge HSV Image
 #split hsv
 h,s,v=cv2.split(bgr_hsv)
@@ -78,7 +73,7 @@ cv2.imshow("Merge_hsv",Merge_hsv)
 cv2.waitKey(0)
 
 ```
-## Output:
+## <br>Output:
 ### i) BGR and RGB to HSV and GRAY
 ![s1](https://user-images.githubusercontent.com/75243072/173755840-ddf0f3e3-d2ef-41bf-ac6d-7204d19c59e5.png)
 
@@ -91,7 +86,7 @@ cv2.waitKey(0)
 ### iv) Split and merge RGB Image
 ![s4](https://user-images.githubusercontent.com/75243072/173756005-2dd5a963-1153-46ca-b19b-05b9a8cdad8a.png)
 
-### v) Split and merge HSV Image
+### <br><br><br><br>v) Split and merge HSV Image
 ![s5](https://user-images.githubusercontent.com/75243072/173756045-f2380ffe-b281-44b1-b6a0-15146280e1b9.png)
 
 ## Result:
